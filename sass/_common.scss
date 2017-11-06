@@ -1,0 +1,15 @@
+// Adding Fonts
+body {
+  background: #fff;
+  font-family: $font-stack, Helvetica, sans-serif;
+  font-weight: normal;
+  color: $primary-color;
+  font-size: 16px;
+}
+a {
+  color: $secondary-color;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+

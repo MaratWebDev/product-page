@@ -1,0 +1,238 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   test9
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  background: #fff;
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+  font-weight: normal;
+  color: #999;
+  font-size: 16px; }
+
+a {
+  color: #fff;
+  font-weight: bold;
+  text-decoration: none; }
+
+header {
+  background: #000000;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1em 150px 1fr 150px 1em;
+  align-content: center;
+  justify-content: center;
+  padding: 0.5em 0; }
+  header nav {
+    grid-column: 3;
+    align-self: center;
+    justify-self: center; }
+    header nav ul li {
+      display: inline-block;
+      padding: 0 1em; }
+  header .icons ul {
+    display: flex;
+    justify-content: flex-end; }
+    header .icons ul .search {
+      background: url("../img/icon-search.png") no-repeat;
+      height: 50px;
+      width: 50px;
+      background-position: center; }
+    header .icons ul .basket {
+      background: url("../img/icon-cart.png") no-repeat;
+      height: 50px;
+      width: 50px;
+      background-position: center; }
+
+.logo {
+  grid-column: 2;
+  font-weight: 600;
+  font-size: 46px; }
+
+.content {
+  background: #fff;
+  display: grid;
+  grid-template-columns: 6em 1fr 3em 1fr 6em;
+  grid-template-rows: repeat(2, minmax(min-content, max-content)) 5em; }
+
+.breadcrumbs {
+  grid-column: 2 / span 5;
+  grid-row: 1;
+  padding: 2em 0;
+  color: #999; }
+  .breadcrumbs li {
+    display: inline; }
+    .breadcrumbs li a {
+      color: #999;
+      font-weight: normal; }
+
+.breadcrumbs li + li:before {
+  padding: 8px;
+  color: #999;
+  content: "\003e"; }
+
+.product-display {
+  grid-column: 2;
+  grid-row: 2; }
+  .product-display img {
+    max-width: 100%;
+    height: auto; }
+  .product-display .thumbnails {
+    display: flex; }
+    .product-display .thumbnails li {
+      padding: 1em 1em 0 0; }
+    .product-display .thumbnails li:first-child {
+      padding-left: none; }
+
+.product-description {
+  grid-column: 4;
+  grid-row: 2;
+  align-self: center;
+  text-align: center; }
+  .product-description .description h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 1em; }
+  .product-description .description .price {
+    color: #f80000;
+    font-size: 30px;
+    margin-bottom: 1em; }
+  .product-description .description s {
+    font-size: 18px;
+    color: #999; }
+  .product-description .description p {
+    margin-bottom: 1em; }
+  .product-description .circles h4 {
+    font-size: 18px;
+    margin: 1em 0; }
+    .product-description .circles h4 span {
+      font-weight: bold;
+      font-size: 20px;
+      color: #000; }
+  .product-description .circles .color-circles {
+    display: flex;
+    justify-content: center;
+    margin: 1em 0; }
+    .product-description .circles .color-circles .color {
+      margin-right: 1em;
+      border-radius: 50%;
+      width: 35px;
+      height: 35px;
+      position: relative; }
+    .product-description .circles .color-circles .purple {
+      background: #4f41a0; }
+    .product-description .circles .color-circles .orange {
+      background: #ff8b5e; }
+    .product-description .circles .color-circles .white-circle {
+      border-radius: 50%;
+      width: 50%;
+      height: 50%;
+      background: #fff;
+      position: relative;
+      top: 25%;
+      left: 27%; }
+    .product-description .circles .color-circles .red {
+      background: #ff2b99; }
+    .product-description .circles .color-circles .teal {
+      background: #59f9ff; }
+    .product-description .circles .color-circles span {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: #000;
+      color: #fff;
+      padding: .5em;
+      border-radius: 5px;
+      margin-bottom: 10em;
+      top: -3em;
+      left: -0.5em;
+      z-index: 1; }
+  .product-description .circles .stock {
+    width: max-content;
+    padding: 1em;
+    margin: 1em auto;
+    font-weight: bold;
+    font-size: 12px;
+    color: #fff;
+    border-radius: 3px;
+    background: #8bd91b;
+    text-transform: uppercase; }
+  .product-description .product-quantity {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    margin: 1em 0; }
+    .product-description .product-quantity input[type=number]::-webkit-inner-spin-button,
+    .product-description .product-quantity input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0; }
+    .product-description .product-quantity input {
+      display: inline-block;
+      background: #f1f1f1;
+      border: 3px solid #000;
+      border-radius: 3px;
+      width: 2em;
+      text-align: center;
+      padding: 1em;
+      margin: 0 1em; }
+    .product-description .product-quantity button {
+      color: #fff;
+      background: linear-gradient(#3f3f3f, #010101);
+      border-radius: 3px;
+      padding: .3em;
+      border: 3px solid #000;
+      font-size: 20px;
+      font-weight: bold; }
+
+footer {
+  display: flex;
+  min-height: 400px;
+  background: url("../img/promo_banner.png") no-repeat;
+  background-size: cover;
+  background-color: turquoise;
+  background-blend-mode: multiply;
+  justify-content: center; }
+  footer h2 {
+    width: 35%;
+    font-weight: bold;
+    font-size: 60px;
+    color: #fff;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+    text-transform: uppercase;
+    align-self: center;
+    text-align: center; }

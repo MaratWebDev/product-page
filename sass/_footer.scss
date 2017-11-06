@@ -1,0 +1,19 @@
+footer {
+    display: flex;
+    min-height: 400px;
+    background: url("../img/promo_banner.png") no-repeat;
+    background-size: cover;
+    background-color: turquoise;
+    background-blend-mode: multiply;
+    justify-content: center;
+   h2 {
+       width: 35%;
+       font-weight: bold;
+       font-size: 60px;
+       color: $secondary-color;
+       text-shadow: 0 0 8px rgba(0,0,0,0.6);
+       text-transform: uppercase;
+       align-self: center;
+       text-align: center;
+   } 
+}

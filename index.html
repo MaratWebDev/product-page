@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Product Page</title>
+</head>
+<body>
+    <main>
+        <header>
+            <h1 class="logo"><a href="#" rel="home">store</a></h1>
+            <nav class = "main-nav">
+                <ul>
+                    <li><a href="#">category</li>
+                    <li><a href="#">category</a></li>
+                    <li><a href="#">category</a></li>
+                    <li><a href="#">category</a></li>
+                    <li><a href="#">category</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <ul>
+                    <li class="search">
+                        <span  href ="#" title="Search"></span>
+                    </li>
+                    <li class="basket">
+                        <span href ="#" title="Basket"></span>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <div class="content">
+            <div class="breadcrumbs">
+                <!-- chec2k this link to see how to add symbol after links 
+                    in breadcrumbs -->
+                <!-- https://www.w3schools.com/howto/howto_css_breadcrumbs.asp -->
+                <ul >
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Category</a></li>
+                    <li>Product</li>
+                </ul>
+            </div>
+            <div class = "product-display">
+                <img src = "img/main_product.png">
+                <ul class = "thumbnails">
+                    <li><img src = "img/thumb_1.png"></li>
+                    <li><img src = "img/thumb_2.png"></li>
+                    <li><img src = "img/thumb_3.png"></li>
+                </ul>
+            </div>
+            <div class="product-description">
+                <section class="description">
+                    <h1>Cooking With Honey  The Healthy Sweetener</h1>
+                    <p class="price">£30.99 <s>was £40.99</s></p>
+                    <p>If you are a culinary fan, if you like to spend time in your kitchen, you likely find yourself lookinf for reliable resources through which you can make purchase of cookware products in the brick and mortar world.</p>
+                </section>
+                <section class="circles">
+                    <h4><span>Colour</span> Orange</h4>
+
+                    <!-- See this to draw circles in css
+                    https://davidwalsh.name/css-circles -->
+                    <ul class="color-circles">
+                        <li class = 'color purple'><span>Purple</span></li>
+                        <li class = 'color orange'> 
+                            <div class="color white-circle"> </div>
+                            <span>Orange</span>
+                        </li>
+                        <li class = 'color red'> <span>Red</span></li>
+                        <li class = 'color teal'> <span>Teal</span></li>
+                    </ul>
+                    <div class = "stock">
+                        <!-- here You can target based on product availabilty by adding classes -->
+                        <p class="available">In Stock</p>    
+                    </div>  
+                </section>
+                <div class="product-quantity">
+                    <label for="productNumber">Quantity</label>
+                    <!-- value = 1 for better UX -->
+                    <input type="number" name="productNumber" value="1">
+                    <button type="submit">Add to basket</button>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <h2>This product is awesome</h2>
+        </footer>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
